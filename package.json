@@ -1,0 +1,35 @@
+{
+  "name": "meetmaati",
+  "version": "1.0.0",
+  "description": "Meet Maati, pAI",
+  "main": "index.js",
+  "scripts": {
+    "test": "maati_test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goblinbot/meetmaati.git"
+  },
+  "keywords": [
+    "AI",
+    "science",
+    "fiction",
+    "scifi",
+    "eyecandy",
+    "robot",
+    "larp"
+  ],
+  "author": "Thijs Boerma th.boerma@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goblinbot/meetmaati/issues"
+  },
+  "homepage": "https://github.com/goblinbot/meetmaati#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "jquery": "^3.2.1",
+    "socket.io": "^1.7.3"
+  }
+}
