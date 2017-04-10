@@ -1,0 +1,46 @@
+@keyframes loadingText {
+  0% {
+    opacity: 0;
+    content: "Meet Maati."; }
+  25% {
+    opacity: 1;
+    content: "Meet Maati."; }
+  40% {
+    opacity: 0;
+    content: "Meet Maati."; }
+  55% {
+    opacity: 0;
+    content: "Your advanced synthetic companion."; }
+  85% {
+    opacity: 1;
+    content: "Your advanced synthetic companion."; }
+  100% {
+    opacity: 1;
+    content: "Your advanced synthetic companion."; } }
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.loadingOverlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(131, 131, 131, 0.5);
+  position: absolute;
+  z-index: 4; }
+  .loadingOverlay h1 {
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50vh;
+    z-index: 5;
+    transition: 0.4s; }
+    .loadingOverlay h1:after {
+      animation-iteration-count: 1;
+      content: "First generation, Maati.";
+      -webkit-animation: loadingText 6s forwards;
+      -moz-animation: loadingText 6s forwards;
+      -animation: loadingText 6s forwards;
+      animation: loadingText 6s forwards; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+@import 'keyframes';
+@mixin animation($values) {
+  -webkit-animation   : $values;
+  -moz-animation      : $values;
+  -animation          : $values;
+  animation           : $values;
+}
+
+$overlayDonker : rgba(131, 131, 131, 0.5);
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+// INTRO
+.loadingOverlay {
+
+  width     : 100vw;
+  height    : 100vh;
+  background: $overlayDonker;
+  position  : absolute;
+  z-index   : 4;
+
+  h1 {
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50vh;
+    z-index: 5;
+    transition: 0.4s;
+    &:after{
+      animation-iteration-count: 1;
+      content: "First generation, Maati.";
+      @include animation(loadingText 6s forwards);
+    }
+  }
+
+}

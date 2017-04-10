@@ -1,0 +1,8 @@
+@keyframes loadingText {
+  0%    {opacity: 0; content: "Meet Maati.";}
+  25%   {opacity: 1; content: "Meet Maati.";}
+  40%   {opacity: 0; content: "Meet Maati.";}
+  55%   {opacity: 0; content: "Your advanced synthetic companion.";}
+  85%   {opacity: 1; content: "Your advanced synthetic companion.";}
+  100%  {opacity: 1; content: "Your advanced synthetic companion.";}
+}
