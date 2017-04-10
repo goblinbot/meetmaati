@@ -13,7 +13,9 @@ app.use('_includes', express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 http.listen(port, function(){
-  console.log('[ HELLO YES ? ]');
+  console.log('[ HELLO YES ]');
+  console.log('   MEETMAATI active on PORT ::'+ port);
+  console.log('   Enjoy your stay.');
 });
 
 /* pathing / routing */
