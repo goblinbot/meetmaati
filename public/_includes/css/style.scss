@@ -19,13 +19,16 @@ html, body {
 
 
 // INTRO
-.loadingOverlay {
+#loadingOverlay {
 
   width     : 100vw;
   height    : 100vh;
   background: $overlayDonker;
   position  : absolute;
   z-index   : 4;
+  left      : 0;
+  top       : 0;
+  transition: 0.5;
 
   h1 {
     color: #FFF;
@@ -42,4 +45,12 @@ html, body {
     }
   }
 
+  &.done {
+    transition: 0.3s;
+    opacity   : 0.1;
+    h1 {
+      transition: 0.3s;
+      opacity   : 0.1;
+    }
+  }
 }

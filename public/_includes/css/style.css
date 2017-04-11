@@ -21,13 +21,16 @@ html, body {
   margin: 0;
   padding: 0; }
 
-.loadingOverlay {
+#loadingOverlay {
   width: 100vw;
   height: 100vh;
   background: rgba(131, 131, 131, 0.5);
   position: absolute;
-  z-index: 4; }
-  .loadingOverlay h1 {
+  z-index: 4;
+  left: 0;
+  top: 0;
+  transition: 0.5; }
+  #loadingOverlay h1 {
     color: #FFF;
     text-align: center;
     position: absolute;
@@ -35,12 +38,18 @@ html, body {
     top: 50vh;
     z-index: 5;
     transition: 0.4s; }
-    .loadingOverlay h1:after {
+    #loadingOverlay h1:after {
       animation-iteration-count: 1;
       content: "First generation, Maati.";
       -webkit-animation: loadingText 6s forwards;
       -moz-animation: loadingText 6s forwards;
       -animation: loadingText 6s forwards;
       animation: loadingText 6s forwards; }
+  #loadingOverlay.done {
+    transition: 0.3s;
+    opacity: 0.1; }
+    #loadingOverlay.done h1 {
+      transition: 0.3s;
+      opacity: 0.1; }
 
 /*# sourceMappingURL=style.css.map */

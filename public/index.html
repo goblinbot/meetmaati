@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<div class="loadingOverlay">
+<div id="loadingOverlay">
   <h1></h1>
 </div>
 
@@ -35,7 +35,19 @@
 <script type="text/javascript" src="/socket.io/socket.io.js"></script>
 <script type="text/javascript" src="/_includes/js/functions.js"></script>
   <script>
+  $(document).ready(function(){
 
+    setTimeout(function(){
+
+      /*$("#loadingOverlay h1").addClass('done');*/
+      $("#loadingOverlay").addClass('done');
+      $("#loadingOverlay").animate({ width: "toggle" });
+      setTimeout(function(){
+        $("#loadingOverlay").addClass('hidden');
+      },1000);
+    },5500);
+
+  });
   </script>
 </body>
 </html>
