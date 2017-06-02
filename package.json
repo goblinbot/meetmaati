@@ -4,6 +4,7 @@
   "description": "Meet Maati, pAI",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "maati_test"
   },
   "repository": {
